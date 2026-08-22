@@ -7113,15 +7113,16 @@ function injectResumeModalStyles() {
     }
     .rm-projects-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
       margin-top: 10px;
     }
     .rm-project-card {
       background: rgba(26, 34, 29, 0.55);
       border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 14px;
-      padding: 12px;
+      padding: 12px 14px;
+      min-width: 0;
       display: flex; flex-direction: column; justify-content: space-between;
       transition: all 0.2s ease;
       text-decoration: none;
@@ -7417,7 +7418,7 @@ function createResumeModal() {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
           <span>SELECTED WORK</span>
         </div>
-        <div class="rm-projects-grid" style="grid-template-columns: repeat(5, 1fr);">
+        <div class="rm-projects-grid">
           <!-- PROJECT 0: INSUPIRO -->
           <div class="rm-project-card">
             <div class="rm-pcard-top">
