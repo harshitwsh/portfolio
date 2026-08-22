@@ -20,6 +20,10 @@ class StaticHandler(http.server.SimpleHTTPRequestHandler):
         super().end_headers()
 
     def guess_type(self, path):
+        if path.endswith('.js') or path.endswith('.mjs'):
+            return 'text/javascript'
+        if path.endswith('.css'):
+            return 'text/css'
         if path.endswith('.wasm'):
             return 'application/wasm'
         if path.endswith('.glb'):
