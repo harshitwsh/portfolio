@@ -7112,10 +7112,12 @@ function injectResumeModalStyles() {
       padding: 14px 18px;
     }
     .rm-projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 12px;
-      margin-top: 10px;
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      gap: 12px !important;
+      margin-top: 10px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
     }
     .rm-project-card {
       background: rgba(26, 34, 29, 0.55);
