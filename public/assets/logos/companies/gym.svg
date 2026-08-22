@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="gymGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gymGrad)" stroke-width="2" opacity="0.3" stroke-dasharray="4,4" />
+  <!-- Dumbbell bar -->
+  <rect x="25" y="45" width="50" height="10" rx="3" fill="url(#gymGrad)" />
+  <!-- Dumbbell weights -->
+  <rect x="15" y="30" width="10" height="40" rx="4" fill="url(#gymGrad)" />
+  <rect x="75" y="30" width="10" height="40" rx="4" fill="url(#gymGrad)" />
+  <!-- Dumbbell inner weights -->
+  <rect x="20" y="35" width="5" height="30" rx="2" fill="url(#gymGrad)" opacity="0.8" />
+  <rect x="75" y="35" width="5" height="30" rx="2" fill="url(#gymGrad)" opacity="0.8" />
+  <!-- Accent curves -->
+  <path d="M 30 15 A 35 35 0 0 1 70 15" fill="none" stroke="url(#gymGrad)" stroke-width="4" stroke-linecap="round" />
+  <path d="M 30 85 A 35 35 0 0 0 70 85" fill="none" stroke="url(#gymGrad)" stroke-width="4" stroke-linecap="round" />
+</svg>
