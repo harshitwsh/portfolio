@@ -10,6 +10,10 @@ export default defineConfig({
       'Access-Control-Allow-Origin': '*',
     },
   },
+  build: {
+    outDir: '../dist',
+    emptyOutDir: true,
+  },
   assetsInclude: [
     '**/*.ktx2',
     '**/*.glb',
