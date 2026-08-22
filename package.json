@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host --port 5173",
-    "build": "vite build",
+    "build": "vite build && node copy-assets.js",
     "preview": "vite preview --host --port 5173",
     "start": "python3 server.py 5173",
     "serve": "serve public -p 5173"
